@@ -1,0 +1,5 @@
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^pedrom.online[nc]
+RewriteRule ^(.*)$ https://pedrom.online/$1 [r=301,nc]
